@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="snake.js"></script>
+	<style>
+	body{
+		margin:0;
+		background-color:#444;
+	}
+	.snake-box{
+		width:701px;
+		height:530px;
+		padding:30px;
+		padding-top:0;
+		overflow:hidden;
+		margin:40px auto 0;
+		border:1px solid #eee;
+		box-shadow:0 0 15px #000;
+		background-color:#fdfdfd;
+	}
+	.control{
+		width:100px;
+		height:100%;
+		float:left;
+	}
+	.reset,.fs-box{
+		padding:0 10px;
+		height:60px;
+		line-height:60px;
+	}
+	.resetbtn{
+		width:100%;
+		height:40px;
+		margin-top:10px;
+		color:#fff;
+		background-color:#A50000;
+		border-radius:2px;
+		text-align:center;
+		line-height:40px;
+	}
+	.resetbtn:active{
+		background-color:#009494;
+	}
+	.fs,.fsnum{
+		width:40px;
+		height:100%;
+		float:left;
+		text-align:center;
+	}
+	#scene{
+		width:600px;
+		height:450px;
+		border-top:1px solid #ddd;
+		border-left:1px solid #ddd;
+		background-color:#ddd;
+		float:left;
+	}
+	.b{
+		width:29px;
+		height:29px;
+		border-bottom:1px solid #ddd;
+		border-right:1px solid #ddd;
+		background-color:#fff;
+		float:left;
+	}
+	.s{
+		background-color:green;
+	}
+	.f{
+		background-color:#A50000;
+	}
+	h2{
+		text-align:center;
+		font-family:'微软雅黑';
+		color:#444;
+		font-size: 38px;
+		text-shadow:1px 1px 1px #333;
+		margin:15px 0;
+	}
+
+	</style>
+</head>
+<body>
+
+<div class="snake-box">
+	<h2>JavaScript游戏之贪吃蛇</h2>
+	<div id="scene">
+		
+	</div>
+	<div class="control">
+		<div class="fs-box">
+			<div class="fs">分数:</div>
+			<div class="fsnum">0</div>
+		</div>
+		<div class="reset">
+			<div class="resetbtn">重新开始</div>
+		</div>
+	</div>
+</div>
+	
+</body>
+</html>
